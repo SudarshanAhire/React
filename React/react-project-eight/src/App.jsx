@@ -57,11 +57,11 @@ function App() {
   return (
    <div>
 
-    {/* <LoggerComponent/> */}
-     {/* <TimerComponent/>  */}
-     {/* < DataFetcher/> */}
-     {/* < ResizeComponent /> */}
-     {/* < MultiEffectComponent /> */}
+    <LoggerComponent/>
+     <TimerComponent/> 
+     < DataFetcher/>
+     < ResizeComponent />
+     < MultiEffectComponent />
 
       {/* <button onClick={handleClick}>
         Click me
