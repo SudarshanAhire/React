@@ -3,6 +3,8 @@ import './App.css'
 import {useEffect, useState} from 'react'
 import LoggerComponent from './components/LoggerComponents'
 import TimerComponent from './components/TimerComponent'
+import DataFetcher from './components/DataFetcher'
+import MultiEffectComponent from './components/MultiEffectComponent'
 
 
 function App() {
@@ -56,7 +58,10 @@ function App() {
    <div>
 
     {/* <LoggerComponent/> */}
-    {/* <TimerComponent/> */}
+     {/* <TimerComponent/>  */}
+     {/* < DataFetcher/> */}
+     {/* < ResizeComponent /> */}
+     {/* < MultiEffectComponent /> */}
 
       {/* <button onClick={handleClick}>
         Click me
