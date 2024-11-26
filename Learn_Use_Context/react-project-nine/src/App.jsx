@@ -3,22 +3,31 @@ import './App.css'
 import ChildA from './components/ChildA';
 
 //step:1  create context
-const UserContext = createContext();
+// const UserContext = createContext();
 //step:2 wrap all the child inside a provider
 //step:3 pass value
 //step:4 consumer k ander jake consume karalo
 
+const ThemeContext = createContext();
+
 function App() {
-  const [user, setUser] = useState({name:"sudarshan"});
-  
+  // const [user, setUser] = useState({name:"sudarshan"});
+  const [theme, setTheme] = useState('light');
   return (
-   <>
-    <UserContext.Provider value={user}>
-      <ChildA />
-    </UserContext.Provider>
-   </>
+
+    <ThemeContext.Provider value={theme}>
+      <ChildA/>
+    </ThemeContext.Provider>
+
+
+  //  <>
+  //   <UserContext.Provider value={user}>
+  //     <ChildA />
+  //   </UserContext.Provider>
+  //  </>
   )
 }
 
 export default App
-export {UserContext}
+// export {UserContext}
+export {ThemeContext}
